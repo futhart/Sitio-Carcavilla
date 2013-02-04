@@ -1,0 +1,80 @@
+body {
+	color: #5f5f5f;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	background: #161616;
+}
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin-bottom: 20px;
+}
+.brand{
+	float: left;
+}
+#navbar {
+	background: #000;
+	left: 0;
+	list-style: none;
+	overflow: hidden;
+	right: 0;
+	text-align: center;
+	top: 0;
+}
+#nav li{
+	display: inline-block;
+}
+#nav li a{
+	color: #707070;
+	display: block;
+	font-size: 11px;
+	padding: 6px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+#nav li a:hover{
+    color: #fff !important;
+    background: none;
+}
+#nav li.active a{
+    color: #fff;
+    text-decoration: underline;
+}
+.section {
+	padding: 50px 20px 20px 20px;
+	height: 560px;
+	background: #fff;
+}
+.section-footer {
+	padding: 50px 20px 20px 20px;
+	height: 510px;
+	background: #fff;
+}
+#inicio{
+	background: url("../img/bg_inicio.jpg") no-repeat top center;
+}
+#que-hacemos{
+	background: url("../img/bg_que-hacemos.jpg");
+}
+
+#trabajos, #clientes{
+	background:#161616;
+}
+#carcavillanos{
+	background: url("../img/bg-carcavillanos.jpg");
+}
+.footer{
+	background: #000;
+	left: 0;
+	list-style: none;
+	overflow: hidden;
+	right: 0;
+	text-align: center;
+	top: 0;
+	padding: 15px;
+}
