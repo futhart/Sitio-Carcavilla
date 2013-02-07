@@ -15,15 +15,23 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
 			<link rel="stylesheet" type="text/css" href="css/flexslider.css" />
 			
+  
+  
 	        <!-- javascript -->
 	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 	        <script type="text/javascript" src="js/bootstrap.js"></script> 
-	        	        <script type="text/javascript" charset="utf-8">
-			  $(window).load(function() {
-			    $('.flexslider').flexslider();
+	        <!-- flexslider -->
+	        <script type="text/javascript" charset="utf-8">
+		    $(window).load(function(){
+			      $('.flexslider').flexslider({
+			        animation: "slide",
+			        keyboard: true,
+			        startAt: 0,
+			      });
 			  });
 			</script>
 	        <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	        <!-- end flexslider -->
 	        <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.js"%3E%3C/script%3E'));</script>
 	        <script src="js/jquery.smooth-scroll.js"></script>
 	        <script src="js/jquery.ba-bbq.js"></script>
@@ -214,6 +222,15 @@
     <li>
       <img src="img/slide3.jpg" />
     </li>
+    <li>
+      <img src="img/slide4.jpg" />
+    </li>
+    <li>
+      <img src="img/slide5.jpg" />
+    </li>
+    <li>
+      <img src="img/slide6.jpg" />
+    </li>
   </ul>
 </div>
 	</div>
@@ -224,6 +241,7 @@
 
 <!-- SECCION CLIENTES -->
 	<div class="section" id="clientes">
+	<img src="img/logos-clientes.jpg"	alt="Nuestros Clientes" />
 	</div>
 	
 <!-- SECCION CONTACTO -->

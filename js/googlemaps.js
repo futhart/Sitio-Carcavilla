@@ -10,8 +10,9 @@ $('#googleMap').gmap3({
               disableDefaultUI: true,
               styles:
               [
+                {featureType: "all", stylers: [{invert_lightness: true}]},
               	{featureType: "all", stylers: [{saturation: -100}]},
-              	{featureType: "all", stylers: [{invert_lightness: true}]},
+              	{featureType: "all", stylers: [{lightness: 9}]},
               ]
             }
           },
