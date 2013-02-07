@@ -884,7 +884,7 @@
 @media (max-width: 480px) {
 	/* new code */
   body {
-  	overflow: visible !important; 
+  	overflow:auto !important; 
     
   }
 

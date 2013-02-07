@@ -25,7 +25,7 @@ p {
 h2{
 	text-transform: uppercase;
 	color: #fff;
-	font-size: 18px;
+	font-size: 28px;
 	font-weight:lighter;
 	letter-spacing: 2px;	
 }
@@ -37,7 +37,16 @@ h3{
 	letter-spacing: 1px;
 	margin: 0;	
 }
-
+::-moz-selection {
+	 background: #ed3d3d;
+	 color: #fff;
+	 text-shadow: none;
+}
+::selection {
+	 background: #ed3d3d;
+	 color: #fff;
+	 text-shadow: none;
+}
 #brand{
 	position: absolute;
 	left:0;
@@ -99,6 +108,11 @@ h3{
 	height: 22px;
 	margin: 100px auto 0 auto;
 }
+.flecha-bajar2{
+	width: 30px;
+	height: 22px;
+	margin: 20px auto 0 auto;
+}
 #flecha-bajar a:hover{
 	bottom: 10px;
 }
@@ -118,6 +132,7 @@ h3{
 #oficinas{
 	padding: 0;
 	min-height: 650px;
+	background: url("../img/loader.gif") center center no-repeat;
 }
 #clientes{
 	background: #fff;
@@ -137,13 +152,24 @@ h3{
 
 .footer{
 	background: #000;
-	left: 0;
 	list-style: none;
-	overflow: hidden;
+	height: 200px;
+	top:0;
+	left: 0;
 	right: 0;
+	line-height: 65px;
+}
+.footer-left{
+	text-align: left;
+	padding: : 0 0 0 20px;
+}
+.footer-right{
+	text-align: right;
+	padding: : 0 20px 0 0;
+}
+.footer-center{
 	text-align: center;
-	top: 0;
-	padding: 15px;
+	
 }
 #googleMap{
 	width: 100%;
@@ -157,8 +183,10 @@ h3{
 .red{
 	background: red;
 }
-.margin100{
-	margin: 100px 0;
+.texto-queahacemos{
+	margin: 130px auto 50px auto ;
+	text-align: center;
+	
 }
 #logotipo {
 	-webkit-animation: moveDown 0.6s ease-in-out 0.4s backwards;
@@ -198,28 +226,169 @@ h3{
 	0% {transform: translateY(-40px);opacity: 0;}
 	100% {transform: translateY(0px);opacity: 1;}
 }
-
-/* TRABAJOS */
-
-.ch-grid {
+/* QUE HACEMOS */
+#que-hacemos .ch-grid {
 	margin: 20px 0 0 0;
 	padding: 0;
 	list-style: none;
 	text-align: center;
 	width: 100%;
 }
-
-.ch-grid:after,
-.ch-item:before {
+#que-hacemos .ch-grid:after,
+#que-hacemos .ch-item:before {
 	content: '';
     display: table;
 }
 
-.ch-grid:after {
+#que-hacemos .ch-grid:after {
 	clear: both;
 }
+#que-hacemos .ch-grid li {
+	width: 160px;
+	height: 160px;
+	display: inline-block;
+	margin: 20px;
+}
 
-.ch-grid li {
+
+#que-hacemos .ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+
+		
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+#que-hacemos .ch-img-1 { 
+	background-image: url(../img/servicios/servicios_TV.png);
+}
+
+#que-hacemos .ch-img-2 { 
+	background-image: url(../img/servicios/servicios_editorial.png);
+}
+
+#que-hacemos .ch-img-3 { 
+	background-image: url(../img/servicios/servicios_branding.png);
+}
+#que-hacemos .ch-img-4 { 
+	background-image: url(../img/servicios/servicios_masivo.png);
+}
+
+#que-hacemos .ch-img-5 { 
+	background-image: url(../img/servicios/servicios_retail.png);
+}
+
+#que-hacemos .ch-img-6 { 
+	background-image: url(../img/servicios/servicios_campanas.png);
+}
+#que-hacemos .ch-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-backface-visibility: hidden; /*for a smooth font */
+}
+
+#que-hacemos .ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin: 0 30px;
+	padding: 60px 0 0 0;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+#que-hacemos .ch-info h3.menosespacio {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin: 0 30px;
+	padding: 50px 0 0 0;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+#que-hacemos .ch-info p {
+	color: #fff;
+	padding: 0px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+#que-hacemos .ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+}
+
+#que-hacemos .ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+#que-hacemos .ch-item:hover {
+	box-shadow: 
+		inset 0 0 0 110px rgba(204,43,43,1),
+		inset 0 0 0 16px rgba(204,43,43,0.8),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+#que-hacemos .ch-item:hover .ch-info {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);	
+}
+/* TRABAJOS */
+#trabajos .ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	width: 100%;
+}
+#trabajos .ch-grid:after,
+#trabajos .ch-item:before {
+	content: '';
+    display: table;
+}
+
+#trabajos .ch-grid:after {
+	clear: both;
+}
+#trabajos .ch-grid li {
 	width: 220px;
 	height: 220px;
 	display: inline-block;
@@ -227,7 +396,7 @@ h3{
 }
 
 
-.ch-item {
+#trabajos .ch-item {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
@@ -245,55 +414,51 @@ h3{
 	transition: all 0.4s ease-in-out;
 }
 
-.ch-img-1 { 
+#trabajos .ch-img-1 { 
 	background-image: url(../img/4.jpg);
 }
 
-.ch-img-2 { 
+#trabajos .ch-img-2 { 
 	background-image: url(../img/5.jpg);
 }
 
-.ch-img-3 { 
+#trabajos .ch-img-3 { 
 	background-image: url(../img/6.jpg);
 }
 
-.ch-info {
+#trabajos .ch-info {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
 	opacity: 0;
-	
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
-	
 	-webkit-transform: scale(0);
 	-moz-transform: scale(0);
 	-o-transform: scale(0);
 	-ms-transform: scale(0);
 	transform: scale(0);
-	
 	-webkit-backface-visibility: hidden; /*for a smooth font */
-
 }
 
-.ch-info h3 {
+#trabajos .ch-info h3 {
 	color: #fff;
 	text-transform: uppercase;
 	position: relative;
 	letter-spacing: 2px;
 	font-size: 14px;
 	margin: 0 30px;
-	padding: 70px 0 0 0;
+	padding: 90px 0 0 0;
 	text-shadow: 
 		0 0 1px #fff, 
 		0 1px 2px rgba(0,0,0,0.3);
 }
 
-.ch-info p {
+#trabajos .ch-info p {
 	color: #fff;
 	padding: 0px 5px;
 	font-style: italic;
@@ -302,7 +467,7 @@ h3{
 	border-top: 1px solid rgba(255,255,255,0.5);
 }
 
-.ch-info p a {
+#trabajos .ch-info p a {
 	display: block;
 	color: #fff;
 	color: rgba(255,255,255,0.7);
@@ -314,24 +479,154 @@ h3{
 	padding-top: 4px;
 }
 
-.ch-info p a:hover {
+#trabajos .ch-info p a:hover {
 	color: #fff222;
-	color: rgba(255,242,34, 0.8);
+	color: rgba(255,242,34, 0.9);
 }
 
-.ch-item:hover {
+#trabajos .ch-item:hover {
 	box-shadow: 
 		inset 0 0 0 110px rgba(204,43,43,0.4),
 		inset 0 0 0 16px rgba(204,43,43,0.8),
 		0 1px 2px rgba(0,0,0,0.1);
 }
-
-.ch-item:hover .ch-info {
+#trabajos .ch-item:hover .ch-info {
 	opacity: 1;
-	
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);	
 }
+
+
+/* CARCAVILLANOS */
+#carcavillanos .ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	width: 100%;
+}
+#carcavillanos .ch-grid:after,
+#carcavillanos .ch-item:before {
+	content: '';
+    display: table;
+}
+
+#carcavillanos .ch-grid:after {
+	clear: both;
+}
+#carcavillanos .ch-grid li {
+	width: 160px;
+	height: 160px;
+	display: inline-block;
+	margin: 20px;
+}
+
+
+#carcavillanos .ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+#carcavillanos .ch-img-1 { 
+	background-image: url(../img/carcavillanos/carcavilla.jpg);
+}
+
+#carcavillanos .ch-img-2 { 
+	background-image: url(../img/carcavillanos/nn.png);
+}
+
+#carcavillanos .ch-img-3 { 
+	background-image: url(../img/carcavillanos/nn.png);
+}
+#carcavillanos .ch-img-4 { 
+	background-image: url(../img/carcavillanos/nn.png);
+}
+
+#carcavillanos .ch-img-5 { 
+	background-image: url(../img/carcavillanos/nn.png);
+}
+
+#carcavillanos .ch-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-backface-visibility: hidden; /*for a smooth font */
+}
+
+#carcavillanos .ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin: 0 30px;
+	padding: 50px 0 0 0;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+#carcavillanos .ch-info p {
+	color: #fff;
+	padding: 0px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+#carcavillanos .ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+}
+
+#carcavillanos .ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+#carcavillanos .ch-item:hover {
+	box-shadow: 
+		inset 0 0 0 110px rgba(204,43,43,0.9),
+		inset 0 0 0 0 rgba(204,43,43,0.8),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+#carcavillanos .ch-item:hover .ch-info {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);	
+}
+ 
