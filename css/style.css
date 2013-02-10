@@ -130,6 +130,7 @@ h3{
 }
 #carcavillanos{
 	background: url("../img/bg-carcavillanos.jpg") repeat;
+	padding: 0 100px;
 }
 #contacto{
 	position: relative;
@@ -642,5 +643,11 @@ h3{
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);	
+}
+
+.texto-historia{
+	text-align: center;
+	padding: 0 200px;
+	margin: 90px 0 0 0;
 }
  
