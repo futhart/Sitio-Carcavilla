@@ -8,8 +8,14 @@ body {
 
 }
 a{
-	color: #cc2b2b;
-	text-decoration: none;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
 }
 a:hover{
 	color: #fff222;
