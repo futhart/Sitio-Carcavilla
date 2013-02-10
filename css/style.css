@@ -155,7 +155,7 @@ h3{
 }
 
 .footer{
-	background: #000;
+	background: #000 !important;
 	list-style: none;
 	top:0;
 	left: 0;
@@ -343,7 +343,7 @@ h3{
 	color: #fff;
 	padding: 0px 5px;
 	font-style: italic;
-	margin: 0 30px;
+	margin: 0 20px;
 	font-size: 12px;
 	line-height: 14px;
 }

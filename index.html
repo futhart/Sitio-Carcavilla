@@ -14,10 +14,12 @@
 			<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
 			<link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+			<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 			
 	        <!-- javascript -->
 	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 	        <script type="text/javascript" src="js/bootstrap.js"></script> 
+	        <script type="text/javascript" src="js/modernizr-2.5.3.min.js"></script> 
 	        
 	        <!-- flexslider -->
 		
@@ -106,7 +108,7 @@
 	</ul>
 </div>
 
-<div class="container-fluid">s
+<div class="container-fluid">
 <!-- SECCION QUE HACEMOS -->
 	<div class="section" id="que-hacemos">
 		<div class="row-fluid texto-queahacemos">
@@ -120,7 +122,7 @@
 	        <div class="ch-item ch-img-1">
 	            <div class="ch-info">
 	                <h3 class="menosespacio">Cine, Radio & TV</h3>
-	                <p>Ideas y estrategias para películas.<a href="#">Ver proyectos</a></p>
+	                <p>Ideas y estrategias para películas.<div class="project"> <a href="#project1">Categoria 01</a></div></p>
 	            </div>
 	        </div>
 	    </li>
@@ -129,7 +131,7 @@
 	        <div class="ch-item ch-img-2">
 	            <div class="ch-info">
 	                <h3>Editorial</h3>
-	                <p>Diseño que habla por sí mismo. <a href="#">Ver proyectos</a></p>
+	                <p>Diseño que habla por sí mismo. <div class="project"> <a href="#project2">Categoria 02</a></div></p>
 	            </div>
 	        </div>
 	    </li>
@@ -138,7 +140,7 @@
 	        <div class="ch-item ch-img-3">
 	            <div class="ch-info">
 	                <h3>Branding</h3>
-	                <p>La estrategia para dar personalidad a tu marca.<a href="#">Ver proyectos</a></p>
+	                <p>La estrategia para dar personalidad a tu marca.<div class="project"> <a href="#project3">Categoria 03</a></div></p>
 	            </div>
 	        </div>
 	    </li>
@@ -146,7 +148,7 @@
 	        <div class="ch-item ch-img-4">
 	            <div class="ch-info">
 	                <h3>Masivo</h3>
-	                <p>Ideas que invaden todos los formatos<a href="#">Ver proyectos</a></p>
+	                <p>Ideas que invaden todos los formatos. <div class="project"> <a href="#project4">Categoria 04</a></div></p>
 	            </div>
 	        </div>
 	    </li>
@@ -154,7 +156,7 @@
 	        <div class="ch-item ch-img-6">
 	            <div class="ch-info">
 	                 <h3 class="menosespacio">Mkt. Directo</h3>
-	                <p>Grandes ideas en pequeños formatos.<a href="#">Ver proyectos</a></p>
+	                <p>Grandes ideas en pequeños formatos.<div class="project"> <a href="#project5">Categoria 05</a></div></p>
 	            </div>
 	        </div>
 	    </li>
@@ -313,5 +315,117 @@
 		<div class="span4 footer-center"><a href="#inicio"><img src="img/flecha_up.png"	alt="Subir" /></a></div>
 		<div class="span4 footer-right"><a href="http://www.brium.cl"><img src="img/footer-brium.jpg"	alt="Brium | Branding Digital" /></a></div>
 	</div>
+
+	<!-- Comienzo de Categorias -->
+	<div id="portfolio-window" class="portfolio-window">
+    <div id="portfolio-content" class="portfolio-content">
+      <div id="portfolio-showcase" class="portfolio-showcase">
+        <ul class="slides">
+          
+          <!-- Proyecto 1 -->
+          <li class="piece" id="project1">
+            <div class="header">
+                <div class="close-window">Cerrar</div>
+              <div class="container">
+                <div class="text">
+                  <h2>Categoria 01</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="container">
+                  <img src="img/imagen.jpg" />
+				</div>
+              <div class="container">
+              <img src="img/imagen.jpg" />
+          	</div>
+            </div>
+          </li>
+          <!-- fin proyecto 1 -->
+
+
+          <!-- proyecto 2 -->
+          <li class="piece" id="project2">
+            <div class="header">
+                <div class="close-window">Cerrar</div>
+              <div class="container">
+                <div class="text">
+                  <h2>Categoria 02</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="container">1</div>
+              <div class="container">2</div>
+              <div class="container">3</div>
+              <div class="container">4</div>
+            </div>
+          </li>
+          <!-- fin proyecto 2 -->
+
+
+          <!-- proyecto 3 -->
+          <li class="piece" id="project3">
+            <div class="header">
+                <div class="close-window">Cerrar</div>
+              <div class="container">
+                <div class="text">
+                  <h2>Categoria 03</h2>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="container">1</div>
+              <div class="container">2</div>
+              <div class="container">3</div>
+              <div class="container">4</div>
+            </div>
+          </li>
+          <!-- fin Proyecto 3 -->
+          <!-- proyecto 4 -->
+          <li class="piece" id="project4">
+            <div class="header">
+                <div class="close-window">Cerrar</div>
+              <div class="container">
+                <div class="text">
+                  <h2>Categoria 04</h2>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="container">1</div>
+              <div class="container">2</div>
+              <div class="container">3</div>
+              <div class="container">4</div>
+            </div>
+          </li>
+          <!-- fin Proyecto 4 -->
+          <!-- proyecto 5 -->
+          <li class="piece" id="project5">
+            <div class="header">
+                <div class="close-window">Cerrar</div>
+              <div class="container">
+                <div class="text">
+                  <h2>Categoria 05</h2>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="container">1</div>
+              <div class="container">2</div>
+              <div class="container">3</div>
+              <div class="container">4</div>
+            </div>
+          </li>
+          <!-- fin Proyecto 5 -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Seccion Categorias -->
+	<script src="js/plugins.js"></script> 
+	<script src="js/script.js"></script>
 </body>
 </html>
