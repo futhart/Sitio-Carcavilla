@@ -8,19 +8,19 @@ ul, li {
 }
 #portfolio {
 	background: #000;
-	text-align: center
+	text-align: center;
 }
 #portfolio .container {
-	padding: 0 12px
+	padding: 0 12px;
 }
 .projects {
 	*zoom:1;
-	clear: both
+	clear: both;
 }
 .projects:after {
 	content: "";
 	display: table;
-	clear: both
+	clear: both;
 }
 
 .portfolio-window {
@@ -49,7 +49,7 @@ ul, li {
 	visibility: visible;
 }
 #portfolio-content {
-*zoom:1;
+	*zoom:1;
 	opacity: 0
 }
 #portfolio-content:after {
@@ -58,7 +58,7 @@ ul, li {
 	clear: both;
 }
 .portfolio-showcase {
-*zoom:1;
+	*zoom:1;
 	background: #000;
 	margin: 0 auto;
 }
@@ -89,7 +89,7 @@ ul, li {
 	background: #000;
 	color: #727272;
 	font-family: "ff-tisa-web-pro", serif;
-*zoom:1;
+	*zoom:1;
 	line-height: 1.4em;
 	min-width: 320px;
 }
@@ -139,7 +139,7 @@ ul, li {
 	text-transform: uppercase;
 }
 .port-nav {
-*zoom:1;
+	*zoom:1;
 	position: relative
 }
 .port-nav:after {
