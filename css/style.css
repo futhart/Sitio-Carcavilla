@@ -4,7 +4,6 @@ body {
 	font-size: 13px;
 	margin: 0;
 	background: #161616;
-	overflow: hidden;
 
 }
 a{
@@ -130,7 +129,8 @@ h3{
 }
 #carcavillanos{
 	background: url("../img/bg-carcavillanos.jpg") repeat;
-	padding: 0 100px;
+	overflow: hidden;
+
 }
 #contacto{
 	position: relative;
