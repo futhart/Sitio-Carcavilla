@@ -27,17 +27,17 @@
 			<script type="text/javascript" charset="utf-8">
 			  $(window).load(function() {
 			    $('#main-slider').flexslider({
-			      animation: 'slide',
-			      controlNav: false,  
-			       keyboard: true,
-			       slideshow: true,   
-			       multipleKeyboard: true,             
+			      	animation: 'slide',
+			       	keyboard: true,
+			       	slideshow: true,   
+			       	multipleKeyboard: true,             
 			    });
 			 
 			    $('#secondary-slider').flexslider({
-			    animationLoop: false,
-			    pauseOnHover: true,
-			    
+			    	animationLoop: false,
+			    	pauseOnHover: true,
+			    	controlNav: "thumbnails",
+
 			    });
 			  });
 			</script>
@@ -115,7 +115,7 @@
 	<div class="section" id="que-hacemos">
 		<div class="row-fluid texto-queahacemos">
 			<h2>No somos agencia, hacemos publicidad.</h2>
-			<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. </P>
+			<P>Revisa algunos de nuestros proyectos en distintas áreas.</P>
 		</div>
 		<div class="row-fluid">
 
@@ -189,7 +189,9 @@
 	<div class="section" id="carcavillanos">
 		<div id="secondary-slider" class="flexslider">
 		  <ul class="slides">
-		    <li><ul class="ch-grid">
+<!-- Equipo -->		    
+	<li data-thumb="img/boton-carcavillanos.jpg">
+		<ul class="ch-grid">
 	    <li>
 	        <div class="ch-item ch-img-1">
 	            <div class="ch-info">
@@ -278,8 +280,9 @@
 	    </li>
 	   </ul>
 	</li>
-
-	<li>
+<!-- Fin Equipo -->
+<!-- Historia -->
+	<li data-thumb="img/boton-historia.jpg">
 		<div class="texto-historia"><p>Carcavilla Boutique Creativa fue fundada  en 1996 por Marco Antonio Carcavilla ex director creativo de JW Thompson, Grey Chile/Madrid y Lowe Porta. La idea inicial era  romper  lo que hasta ese momento era el modelo tradicional  de las agencias de publicidad donde el gran negocio era hacer gastar al cliente en medios tradicionales, delegando cualquier forma de innovación a  un segundo plano. Boutique creativa Carcavilla  irrumpe en el mercado  entregando  un servicio con fuerte énfasis en la creatividad estratégica,   apostando por nuevos formatos y maneras de anunciar.</p>
 		<p>El año 2006 se integra Angel Carcavilla, de formación periodista  con una amplia experiencia en la creación de guiones de series y en la  dirección de programas de televisión emblemáticos como Plan Z  y  Gato Por Liebre.</p>
 		<p>La dupla creativa rápidamente comienza a meter ruido en el mercado, haciendo la publicidad de importantes medios de comunicación, de películas locales, campañas sociales, políticas y gubernamentales. El éxito también se ve reflejado en  los concursos de Publicidad, instalando a Boutique Creativa Carcavilla como una referencia entre sus pares.</p>
@@ -287,6 +290,7 @@
 		 <h2>“La creatividad no muerde”</h2>
 		</div>
 	 </li>
+<!-- Cierre Historia -->
 	</ul>
 	</div>
 	</div>
@@ -379,7 +383,7 @@
               <img src="img/imagen.jpg" />
           	</div>
             </div>
-            
+
             <div class="close-window"><img src="img/cerrar.png"	alt="Cerrar o presiona Esc" /></div>
           </li>
           <!-- fin Proyecto 2 -->
@@ -428,6 +432,7 @@
     </div>
   </div>
   <!-- Fin Seccion Categorias -->
+
 	<script src="js/plugins.js"></script> 
 	<script src="js/script.js"></script>
 </body>
