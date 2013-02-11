@@ -194,9 +194,7 @@ ul, li {
 	padding-top: 20px
 }
 .portfolio-showcase .next-piece {
-	position: absolute;
-	right: 20px;
-	top: 37px;
+	
 }
 @media only screen and (max-width:600px) {
 .portfolio-showcase .next-piece {
