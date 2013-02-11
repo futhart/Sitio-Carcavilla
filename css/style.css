@@ -258,7 +258,7 @@ h3{
 #que-hacemos .ch-grid:after {
 	clear: both;
 }
-#que-hacemos .ch-grid li {
+#que-hacemos .ch-grid  {
 	width: 160px;
 	height: 160px;
 	display: inline-block;
@@ -272,6 +272,8 @@ h3{
 	border-radius: 50%;
 	position: relative;
 	cursor: default;
+	display: block;
+	float: left;
 
 		
 	-webkit-transition: all 0.4s ease-in-out;

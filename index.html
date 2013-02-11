@@ -29,24 +29,39 @@
 			    $('#main-slider').flexslider({
 			      	animation: 'slide',
 			       	keyboard: true,
-			       	slideshow: true,   
+			       	startAt: 0,
+			       	slideshow: false,   
 			       	multipleKeyboard: true,             
 			    });
 			 
 			    $('#secondary-slider').flexslider({
 			    	animationLoop: false,
+			    	animation: 'slide',
+			    	startAt: 0,
+					slideshow: false,
 			    	pauseOnHover: true,
-			    	controlNav: "thumbnails",
+			    	controlNav: "thumbnails"
 
 			    });
+
+			    
 			  });
 			</script>
 	        <script type="text/javascript" src="js/jquery.flexslider.js"></script>
 	        <!-- end flexslider -->
-	        <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.js"%3E%3C/script%3E'));</script>
+	        
 	        <script src="js/jquery.smooth-scroll.js"></script>
 	        <script src="js/jquery.ba-bbq.js"></script>
 			  <script>
+			  function showHistory(){
+			  	$('#h22').fadeIn();
+			  	$('#h12').fadeOut();
+			    
+			  }
+			  function showCarcavilla(){
+			  	$('#h22').fadeOut();
+			    $('#h12').fadeIn();
+			  }
 			    $(document).ready(function() {
 			
 			      $('a[href*="#"]').live('click', function() {
@@ -55,6 +70,7 @@
 			          return false;
 			        }
 			      });
+
 			
 			      $(window).bind('hashchange', function(event) {
 			        var tgt = location.hash.replace(/^#\/?/,'');
@@ -117,52 +133,46 @@
 			<h2>No somos agencia, hacemos publicidad.</h2>
 			<P>Revisa algunos de nuestros proyectos en distintas áreas.</P>
 		</div>
-		<div class="row-fluid">
+		<div class="row-fluid" id="portfolio">
 
-		<ul class="ch-grid">
-	    <li>
+		<div class="ch-grid" id="projects">
 	        <div class="ch-item ch-img-1">
 	            <div class="ch-info">
 	                <h3 class="menosespacio">Cine, Radio & TV</h3>
-	                <p>Ideas y estrategias para películas.<div class="project"> <a href="#project0">Categoria 00</a></div></p>
+	                <p>Ideas y estrategias para películas.<div class="projectxx"> <a href="#project0">Categoria 00</a></div></p>
 	            </div>
 	        </div>
-	    </li>
-	    
-	    <li>
+	
 	        <div class="ch-item ch-img-2">
 	            <div class="ch-info">
 	                <h3>Editorial</h3>
-	                <p>Diseño que habla por sí mismo. <div class="project"> <a href="#project1">Categoria 01</a></div></p>
+	                <p>Diseño que habla por sí mismo. <div class="projectxx"> <a href="#project1">Categoria 01</a></div></p>
 	            </div>
 	        </div>
-	    </li>
-	    
-	    <li>
+	
 	        <div class="ch-item ch-img-3">
 	            <div class="ch-info">
 	                <h3>Branding</h3>
-	                <p>La estrategia para dar personalidad a tu marca.<div class="project"> <a href="#project2">Categoria 02</a></div></p>
+	                <p>La estrategia para dar personalidad a tu marca.<div class="projectxx"> <a href="#project2">Categoria 02</a></div></p>
 	            </div>
 	        </div>
-	    </li>
-	    <li>
+	    
 	        <div class="ch-item ch-img-4">
 	            <div class="ch-info">
 	                <h3>Masivo</h3>
-	                <p>Ideas que invaden todos los formatos. <div class="project"> <a href="#project3">Categoria 03</a></div></p>
+	                <p>Ideas que invaden todos los formatos. <div class="projectxx"> <a href="#project3">Categoria 03</a></div></p>
 	            </div>
 	        </div>
-	    </li>
-	    <li>
+	    
+	    
 	        <div class="ch-item ch-img-6">
 	            <div class="ch-info">
 	                 <h3 class="menosespacio">Mkt. Directo</h3>
 	                <p>Grandes ideas en pequeños formatos.<div class="project"> <a href="#project4">Categoria 04</a></div></p>
 	            </div>
 	        </div>
-	    </li>
-	   </ul>
+	    
+	   </div>
 		</div>
 	</div>
 
@@ -187,10 +197,12 @@
 
 <!-- SECCION EQUIPO -->
 	<div class="section" id="carcavillanos">
+		<a href="javascript::return false;" onclick="showHistory();">Muestra historia</a>
+		<a href="javascript::return false;" onclick="showCarcavilla();">Muestra carcavillanos</a>
 		<div id="secondary-slider" class="flexslider">
 		  <ul class="slides">
 <!-- Equipo -->		    
-	<li data-thumb="img/boton-carcavillanos.jpg">
+	<li data-thumb="img/boton-carcavillanos.jpg" id = "h12">
 		<ul class="ch-grid">
 	    <li>
 	        <div class="ch-item ch-img-1">
@@ -282,7 +294,7 @@
 	</li>
 <!-- Fin Equipo -->
 <!-- Historia -->
-	<li data-thumb="img/boton-historia.jpg">
+	<li data-thumb="img/boton-historia.jpg" id = "h22">
 		<div class="texto-historia"><p>Carcavilla Boutique Creativa fue fundada  en 1996 por Marco Antonio Carcavilla ex director creativo de JW Thompson, Grey Chile/Madrid y Lowe Porta. La idea inicial era  romper  lo que hasta ese momento era el modelo tradicional  de las agencias de publicidad donde el gran negocio era hacer gastar al cliente en medios tradicionales, delegando cualquier forma de innovación a  un segundo plano. Boutique creativa Carcavilla  irrumpe en el mercado  entregando  un servicio con fuerte énfasis en la creatividad estratégica,   apostando por nuevos formatos y maneras de anunciar.</p>
 		<p>El año 2006 se integra Angel Carcavilla, de formación periodista  con una amplia experiencia en la creación de guiones de series y en la  dirección de programas de televisión emblemáticos como Plan Z  y  Gato Por Liebre.</p>
 		<p>La dupla creativa rápidamente comienza a meter ruido en el mercado, haciendo la publicidad de importantes medios de comunicación, de películas locales, campañas sociales, políticas y gubernamentales. El éxito también se ve reflejado en  los concursos de Publicidad, instalando a Boutique Creativa Carcavilla como una referencia entre sus pares.</p>
@@ -291,7 +303,9 @@
 		</div>
 	 </li>
 <!-- Cierre Historia -->
+
 	</ul>
+
 	</div>
 	</div>
 
