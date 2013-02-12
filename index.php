@@ -277,7 +277,7 @@
 			    </li>
 		   </ul>
 	   </div>
-	   <div id="h22">
+	   <div id="h22" style="display:none">
 		<div class="texto-historia"><p>Carcavilla Boutique Creativa fue fundada  en 1996 por Marco Antonio Carcavilla ex director creativo de JW Thompson, Grey Chile/Madrid y Lowe Porta. La idea inicial era  romper  lo que hasta ese momento era el modelo tradicional  de las agencias de publicidad donde el gran negocio era hacer gastar al cliente en medios tradicionales, delegando cualquier forma de innovación a  un segundo plano. Boutique creativa Carcavilla  irrumpe en el mercado  entregando  un servicio con fuerte énfasis en la creatividad estratégica,   apostando por nuevos formatos y maneras de anunciar.</p>
 		<p>El año 2006 se integra Angel Carcavilla, de formación periodista  con una amplia experiencia en la creación de guiones de series y en la  dirección de programas de televisión emblemáticos como Plan Z  y  Gato Por Liebre.</p>
 		<p>La dupla creativa rápidamente comienza a meter ruido en el mercado, haciendo la publicidad de importantes medios de comunicación, de películas locales, campañas sociales, políticas y gubernamentales. El éxito también se ve reflejado en  los concursos de Publicidad, instalando a Boutique Creativa Carcavilla como una referencia entre sus pares.</p>
