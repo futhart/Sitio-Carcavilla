@@ -125,7 +125,7 @@
     }
     
     if (viewScrollTop > ( $('#projects').offset().top - $view.height() + 200) ) {
-      $('.ch-item').addClass('slideIn');
+      $('#que-hacemos .ch-item').addClass('slideIn');
     }
   
   };
@@ -237,7 +237,7 @@
       aboutTouch = true;
     }
     
-    $('.ch-item').click(function() {
+    $('#que-hacemos .ch-item').click(function() {
     
       $view.focus();
     
